@@ -1,10 +1,12 @@
 .neon-flex {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .neon-flex-column {
     flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 .neon-justify-self {
