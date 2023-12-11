@@ -1,19 +1,27 @@
 :root {
     --primary-color: #27282B;
-    --primary-color-hover: #27282B;
+    --primary-color-hover: #1d1e21;
     --secondary-color: #181F29;
-    --secondary-color-hover: #181F29;
+    --secondary-color-hover: #10151c;
     --accent-color: #F2BF1D;
-    --accent-color-hover: #F2BF1D;
+    --accent-color-hover: #d7a919;
     --background-color: #FEFEFE;
     --disabled-color: #bdc3c7;
+    --primary-color-rgb: 39, 40, 43;         /* #27282B */
+    --primary-color-rgb-hover: 29, 30, 33;   /* #1D1E21 */
+    --secondary-color-rgb: 24, 31, 41;       /* #181F29 */
+    --secondary-color-rgb-hover: 16, 21, 28; /* #10151C */
+    --accent-color-rgb: 242, 191, 29;        /* #F2BF1D */
+    --accent-color-rgb-hover: 215, 169, 25;  /* #D7A919 */
+    --background-color-rgb: 254, 254, 254;   /* #FEFEFE */
+    --disabled-color-rgb: 189, 195, 199;     /* #bdc3c7 */
     --text-color-light: #181F29;
     --text-color-dark: #FFFFFF;
     --text-color-disabled: #8395a7;
     --border-radius: 10px;
     --border-radius-rounded: 30px;
     --border-radius-circle: 50%;
-    --bg-box-shadow-opacity: 0.5;
+    --bg-box-shadow-opacity: 0.1;
 }
 
 /**
@@ -164,31 +172,32 @@
 .neon-button-outline-danger,
 .neon-button-outline-disabled,
 .neon-button-outline-whatsapp {
+    border: 1px solid !important;;
     border-radius: var(--border-radius) !important;
 }
 
 .neon-button-outline-primary {
-    border: 1px solid var(--primary-color) !important;
+    border-color:var(--primary-color) !important;
     color: var(--primary-color) !important;
 }
 
 .neon-button-outline-secondary {
-    border: 1px solid var(--secondary-color) !important;
+    border-color:var(--secondary-color) !important;
     color: var(--secondary-color) !important;
 }
 
 .neon-button-outline-accent {
-    border: 1px solid var(--accent-color) !important;
+    border-color:var(--accent-color) !important;
     color: var(--accent-color) !important;
 }
 
 .neon-button-outline-disabled {
-    border: 1px solid var(--disabled-color) !important;
+    border-color:var(--disabled-color) !important;
     color: var(--disabled-color) !important;
 }
 
 .neon-button-outline-whatsapp {
-    border: 1px solid #58BE55 !important;
+    border-color:#58BE55 !important;
     color: #58BE55 !important;
 }
 
@@ -283,43 +292,43 @@
 }
 
 .neon-pr-1 {
-    padding-right: 1rem !important;
+    padding-right: 0.25rem !important;
 }
 
 .neon-pr-2 {
-    padding-right: 2rem !important;
+    padding-right: 0.5rem !important;
 }
 
 .neon-pr-3 {
-    padding-right: 3rem !important;
+    padding-right: 1rem !important;
 }
 
 .neon-pr-4 {
-    padding-right: 4rem !important;
+    padding-right: 1.5rem !important;
 }
 
 .neon-pr-5 {
-    padding-right: 5rem !important;
+    padding-right: 3rem !important;
 }
 
 .neon-pb-1 {
-    padding-bottom: 1rem !important;
+    padding-bottom: 0.25rem !important;
 }
 
 .neon-pb-2 {
-    padding-bottom: 2rem !important;
+    padding-bottom: 0.5rem !important;
 }
 
 .neon-pb-3 {
-    padding-bottom: 3rem !important;
+    padding-bottom: 1rem !important;
 }
 
 .neon-pb-4 {
-    padding-bottom: 4rem !important;
+    padding-bottom: 1.5rem !important;
 }
 
 .neon-pb-5 {
-    padding-bottom: 5rem !important;
+    padding-bottom: 3rem !important;
 }
 
 .neon-no-padding {
@@ -486,19 +495,19 @@
  * Box Shadow
  */
 .neon-box-shadow-primary {
-    box-shadow: 0 0 10px rgb(var(--primary-color), var(--bg-box-shadow-opacity)) !important;
+    box-shadow: 0 0 10px rgba(var(--primary-color-rgb), var(--bg-box-shadow-opacity)) !important;
 }
 
 .neon-box-shadow-secondary {
-    box-shadow: 0 0 10px rgb(var(--secondary-color), var(--bg-box-shadow-opacity)) !important;
+    box-shadow: 0 0 10px rgba(var(--secondary-color-rgb), var(--bg-box-shadow-opacity)) !important;
 }
 
 .neon-box-shadow-accent {
-    box-shadow: 0 0 10px rgb(var(--accent-color), var(--bg-box-shadow-opacity)) !important;
+    box-shadow: 0 0 10px rgba(var(--accent-color-rgb), var(--bg-box-shadow-opacity)) !important;
 }
 
 .neon-box-shadow-disabled {
-    box-shadow: 0 0 10px rgb(var(--disabled-color), var(--bg-box-shadow-opacity)) !important;
+    box-shadow: 0 0 10px rgba(var(--disabled-color-rgb), var(--bg-box-shadow-opacity)) !important;
 }
 
 .neon-box-shadow-primary:hover,
@@ -506,7 +515,7 @@
 .neon-box-shadow-primary:focus,
 .neon-box-shadow-primary:focus-visible,
 .neon-box-shadow-primary:focus-within {
-    box-shadow: 0 0 10px rgb(var(--primary-color-hover), var(--bg-box-shadow-opacity)) !important;
+    box-shadow: 0 0 10px rgba(var(--primary-color-rgb-hover), var(--bg-box-shadow-opacity)) !important;
 }
 
 .neon-box-shadow-secondary:hover,
@@ -514,7 +523,7 @@
 .neon-box-shadow-secondary:focus,
 .neon-box-shadow-secondary:focus-visible,
 .neon-box-shadow-secondary:focus-within {
-    box-shadow: 0 0 10px rgb(var(--secondary-color-hover), var(--bg-box-shadow-opacity)) !important;
+    box-shadow: 0 0 10px rgba(var(--secondary-color-rgb-hover), var(--bg-box-shadow-opacity)) !important;
 }
 
 .neon-box-shadow-accent:hover,
@@ -522,18 +531,21 @@
 .neon-box-shadow-accent:focus,
 .neon-box-shadow-accent:focus-visible,
 .neon-box-shadow-accent:focus-within {
-    box-shadow: 0 0 10px rgb(var(--accent-color-hover), var(--bg-box-shadow-opacity)) !important;
+    box-shadow: 0 0 10px rgba(var(--accent-color-rgb-hover), var(--bg-box-shadow-opacity)) !important;
 }
 
 /**
  * Rounded & Circle
  */
+.neon-radius {
+    border-radius: var(--border-radius) !important;
+}
 .neon-rounded {
-    border-radius: 30px !important;
+    border-radius: var(--border-radius-rounded) !important;
 }
 
 .neon-circle {
-    border-radius: 50% !important;
+    border-radius: var(--border-radius-circle) !important;
 }
 
 /**
@@ -592,13 +604,13 @@
 }
 
 .neon-border-primary-subtle {
-    border-color: rgb(var(--primary-color), var(--bg-box-shadow-opacity)) !important;
+    border-color: rgba(var(--primary-color-rgb), var(--bg-box-shadow-opacity)) !important;
 }
 
 .neon-border-secondary-subtle {
-    border-color: rgb(var(--secondary-color), var(--bg-box-shadow-opacity)) !important;
+    border-color: rgba(var(--secondary-color-rgb), var(--bg-box-shadow-opacity)) !important;
 }
 
 .neon-border-accent-subtle {
-    border-color: rgb(var(--accent-color), var(--bg-box-shadow-opacity)) !important;
+    border-color: rgba(var(--accent-color-rgb), var(--bg-box-shadow-opacity)) !important;
 }
